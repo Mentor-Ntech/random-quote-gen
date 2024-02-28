@@ -79,7 +79,7 @@ async function getQuotes() {
     newQuote();
 
     } catch(error) {
-        console.log(error)
+        console.log(error);
     }
 }
 

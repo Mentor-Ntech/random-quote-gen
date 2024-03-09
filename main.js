@@ -94,3 +94,66 @@ newQuoteBtn.addEventListener("click", newQuote);
 twitterBtn.addEventListener("click", tweetQuote);
 
 getQuotes()
+
+
+// const quoteCon = document.getElementById('quote-Container');
+// const quoteText = document.getElementById('quote');
+// const authorName = document.getElementById('author');
+// const twitterBtn = document.getElementById('twitter');
+// const newQuoteBtn = document.getElementById('new-quote');
+// const loader = document.getElementById('loader');
+
+// let apiQuotes = [];
+
+// const showLoading = () => {
+//   loader.hidden = false;
+//   quoteCon.hidden = true;
+// };
+
+// const showComplete = () => {
+//   quoteCon.hidden = false;
+//   loader.hidden = true;
+// };
+
+// const newQuote = () => {
+//   showLoading();
+//   const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
+
+//   if (!quote.author) {
+//     authorName.textContent = "Unknown";
+//   } else {
+//     authorName.textContent = quote.author;
+//   }
+
+//   if (quote.text.length > 50) {
+//     quoteText.classList.add("long-quote");
+//   } else {
+//     quoteText.classList.remove("long-quote");
+//   }
+
+//   quoteText.textContent = quote.text;
+//   showComplete();
+// };
+
+// const getQuotes = async () => {
+//   const apiUrl = 'https://type.fit/api/quotes';
+//   showLoading();
+
+//   try {
+//     const res = await fetch(apiUrl);
+//     apiQuotes = await res.json();
+//     newQuote();
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+// const tweetQuote = () => {
+//   const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorName.textContent}`;
+//   window.open(twitterUrl, "_blank");
+// };
+
+// newQuoteBtn.addEventListener("click", newQuote);
+// twitterBtn.addEventListener("click", tweetQuote);
+
+// getQuotes();

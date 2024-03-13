@@ -5,21 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random-Quote</title>
     <link rel="stylesheet" href="style.css" />
-
-    <head>
-        <!-- load all Font Awesome v6 styles -->
-        <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
-      
-        <!-- support v4 icon references/syntax -->
-        <link href="/your-path-to-fontawesome/css/v4-shims.css" rel="stylesheet">
-      </head>
+    <script src="https://kit.fontawesome.com/d1cf2636a8.js" crossorigin="anonymous"></script>
       
   </head>
   <body>
     <div class="quoteContainer" id="quote-Container">
       <!-- Quote -->
       <div class="quoteText">
-        <ion-icon name="quote" class="quoteLeft"></ion-icon>
+        <i class="fa-solid fa-quote-left"></i>
         <span id="quote"></span
         >
       </div>
@@ -34,20 +27,20 @@
       <!-- Button -->
       <div class="buttonContainer">
         <button class="twitterButton" id="twitter" title="Tweet This!">
-            <ion-icon name="logo-twitter" class="twitterIcon"></ion-icon>
+          <i class="fa-brands fa-x-twitter"></i>
         </button>
 
         <button id="new-quote">New Quote</button>
       </div>
 
 
-    </div>
+    </div>    
 
     <!-- loader -->
     <div class="loader" id="loader"></div>
 
-    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    
+    
     <script src="main.js"></script>
   </body>
 </html>
